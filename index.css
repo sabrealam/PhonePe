@@ -99,6 +99,7 @@
       /* border:2px solid red;  */
       padding: 10px; 
       margin-top: 15px;
+      position: relative;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
      form > label {
@@ -113,9 +114,7 @@
       border-radius: 5px;
       margin-left: 20px;
      }
-     form > input:focus{
-        /* border-color: red; */
-     }
+ 
      form > input:nth-child(2){
         font-size: 13px;
      }
@@ -139,17 +138,18 @@
         font-size: 15px;    font-weight: bolder; 
         cursor: pointer;    border:none;
      }
-/* .pop{
-      width: 25%;height: 500px; 
+.pop{
+      /* width: 25%;height: 500px; 
       padding: 1px; 
       background-color: rgb(255, 255, 255);
       border-radius: 7px;
       border:2px solid red;
       position: absolute;
        top: 76px;left: 523px;
-        display: none;  
-       padding: 25px;
-} */
+       padding: 25px; */
+       /* top: 10px;left: 0px; */
+       /* display: none;   */
+}
 
 .note {
     width: 70%;height: 60px; 

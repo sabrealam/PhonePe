@@ -4,14 +4,12 @@ let log = document.querySelector('#log');
 let name = document.querySelector('#name');
 let mbl = document.querySelector('#mbl');
 let price = document.querySelector('#price');
-// let popp = document.querySelector('.pop');
-let count = 0;
+// let popp = document.querySelector('.pop'); 
 let arb = [];
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-function dopay(){ 
-  count++;
+function dopay(){  
   let  f =  prompt('Please Enter Reciver Name');
   let  s =  prompt('Please Enter Reciver Bank Name');
   arb.push(f,s)
@@ -22,9 +20,7 @@ function dopay(){
   let str = '';
   q.map((e)=>{str += e[0]})
   log.innerHTML = str.toUpperCase();   
-  return count;
 }  
-
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -33,15 +29,18 @@ let arr = JSON.parse(localStorage.getItem('data')) || [];
 
 form.addEventListener('submit',function(e){ 
   e.preventDefault(); 
-let pro = new Promise(function(resolve,reject){
-    // popp.style.display = 'block';
+  // popp.style.display = 'block';
+  new Promise(function(resolve,reject){
     console.log('Please Wait ...');
-    if(price.value <= 2000 && price.value >= 1 && arb[0] != undefined ){
+    if(price.value <= 2000 && price.value >= 1 && arb[0] != '' ){
+      //&& arb[0] != undefined 
      setTimeout(() => {
-      resolve(res);
-     }, 3000); 
+      console.log('resolve');
+      resolve(res());
+     }, 1000); 
     }else{
-      reject(rej);
+      console.log('reject');
+      reject(rej());
     }
   })
 })
@@ -62,8 +61,8 @@ function res(){
     
     localStorage.setItem('data',JSON.stringify(arr));
     
-    window.open('http://127.0.0.1:3004/success/success.html','_blank');
-    location.reload();
+    window.open('http://127.0.0.1:3004/success/success.html');
+    // location.reload();
   }
 }
 
@@ -73,8 +72,8 @@ function rej(){
   // alert('You Do Not Have Sufficient Balance\n|OR|\nNot Enter Reciver Name And bank Name\n ➡ Plese Click T0 The Payment Button On The Top Right Corner');
   // popp.style.display = 'block';
   setTimeout(() => {
-    window.open('http://127.0.0.1:3000/failed/faild.html','_parent')
-  }, 2000);
+    window.open('http://127.0.0.1:3004/failed/faild.html')
+  }, 1000);
     
   // location.reload();
 }
