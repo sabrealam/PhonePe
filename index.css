@@ -139,7 +139,7 @@
         font-size: 15px;    font-weight: bolder; 
         cursor: pointer;    border:none;
      }
-.pop{
+/* .pop{
       width: 25%;height: 500px; 
       padding: 1px; 
       background-color: rgb(255, 255, 255);
@@ -147,9 +147,9 @@
       border:2px solid red;
       position: absolute;
        top: 76px;left: 523px;
-       /* display: none; */
+        display: none;  
        padding: 25px;
-}
+} */
 
 .note {
     width: 70%;height: 60px; 

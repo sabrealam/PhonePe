@@ -4,7 +4,7 @@ let log = document.querySelector('#log');
 let name = document.querySelector('#name');
 let mbl = document.querySelector('#mbl');
 let price = document.querySelector('#price');
-let popp = document.querySelector('.pop');
+// let popp = document.querySelector('.pop');
 let count = 0;
 let arb = [];
 
@@ -34,7 +34,7 @@ let arr = JSON.parse(localStorage.getItem('data')) || [];
 form.addEventListener('submit',function(e){ 
   e.preventDefault(); 
 let pro = new Promise(function(resolve,reject){
-    popp.style.display = 'block';
+    // popp.style.display = 'block';
     console.log('Please Wait ...');
     if(price.value <= 2000 && price.value >= 1 && arb[0] != undefined ){
      setTimeout(() => {
@@ -71,7 +71,7 @@ function res(){
 
 function rej(){
   // alert('You Do Not Have Sufficient Balance\n|OR|\nNot Enter Reciver Name And bank Name\n ➡ Plese Click T0 The Payment Button On The Top Right Corner');
-  popp.style.display = 'block';
+  // popp.style.display = 'block';
   setTimeout(() => {
     window.open('http://127.0.0.1:3000/failed/faild.html','_parent')
   }, 2000);
