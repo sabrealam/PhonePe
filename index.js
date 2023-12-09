@@ -9,9 +9,14 @@ let bbb = document.querySelector('.bbb');
 let arb = [];
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ 
 function alerte(){
-  alert('Click Pay Now On Top Right Corner To Initiate The Payment\n\nRead More On The Bottom')
-
+  let alt = JSON.parse(localStorage.getItem('alert'));
+  if(alt == null){
+    alert('Click Pay Now On Top Right Corner To Initiate The Payment\n\nRead More On The Bottom')
+    localStorage.setItem('alert',JSON.stringify(1));
+  }
+  
 }
 function dopay(){  
   let  f =  prompt('Please Enter Reciver Name');
@@ -37,13 +42,11 @@ form.addEventListener('submit',function(e){
   bbb.style.display = 'none';
   new Promise(function(resolve,reject){
     console.log('Please Wait ...');
-    if(price.value <= 2000 && price.value >= 1 && arb[0] != undefined || arb[1] != undefined ){
-     setTimeout(() => {
-      console.log('resolve');
+    if(price.value <= 2000 && price.value >= 1 &&  arb[0] != undefined && arb[1] != undefined ){
+     setTimeout(() => { 
       resolve(res());
      }, 1000); 
-    }else{
-      console.log('reject');
+    }else{ 
       reject(rej());
     }
   })
