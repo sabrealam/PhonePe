@@ -61,7 +61,7 @@ function res(){
     
     localStorage.setItem('data',JSON.stringify(arr));
     
-    window.open('http://127.0.0.1:3004/success/success.html');
+    window.open('http://127.0.0.1:3004/success.html');
     // location.reload();
   }
 }
@@ -69,14 +69,12 @@ function res(){
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function rej(){
-  // alert('You Do Not Have Sufficient Balance\n|OR|\nNot Enter Reciver Name And bank Name\n ➡ Plese Click T0 The Payment Button On The Top Right Corner');
-  // popp.style.display = 'block';
+   // popp.style.display = 'block';
   setTimeout(() => {
-    window.open('http://127.0.0.1:3004/failed/faild.html')
+    window.open('http://127.0.0.1:3004/faild.html')
   }, 1000);
     
-  // location.reload();
-}
+ }
 
 
 

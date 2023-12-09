@@ -29,7 +29,7 @@ arr.map(e=>{
     
 });          
 function go(){ 
-    window.close('http://127.0.0.1:3000/index/index.html') 
+    window.open('http://127.0.0.1:3004/index.html','_parent') 
     
 }
  
