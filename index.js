@@ -9,7 +9,10 @@ let bbb = document.querySelector('.bbb');
 let arb = [];
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+function alerte(){
+  alert('Click Pay Now On Top Right Corner To Initiate The Payment\n\nRead More On The Bottom')
 
+}
 function dopay(){  
   let  f =  prompt('Please Enter Reciver Name');
   let  s =  prompt('Please Enter Reciver Bank Name');
@@ -34,8 +37,7 @@ form.addEventListener('submit',function(e){
   bbb.style.display = 'none';
   new Promise(function(resolve,reject){
     console.log('Please Wait ...');
-    if(price.value <= 2000 && price.value >= 1 && arb[0] != '' ){
-      //&& arb[0] != undefined 
+    if(price.value <= 2000 && price.value >= 1 && arb[0] != undefined || arb[1] != undefined ){
      setTimeout(() => {
       console.log('resolve');
       resolve(res());
@@ -72,9 +74,16 @@ function res(){
 function rej(){
    pop.style.display = 'block';
    bbb.style.display = 'none';
-  setTimeout(() => {
-    window.open('./faild.html','_parent')
-  }, 1000);
+
+   if(arb[0] == undefined || arb[1] == undefined){
+    alert('Please Click On The Pay Now Button On The Top RIght Corner');
+    location.reload();
+   }else{
+
+     setTimeout(() => {
+       window.open('./faild.html','_parent')
+      }, 1000);
+    }
     
  }
 
