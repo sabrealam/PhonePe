@@ -33,7 +33,7 @@ let arr = JSON.parse(localStorage.getItem('data')) || [];
 
 form.addEventListener('submit',function(e){ 
   e.preventDefault(); 
-let pro =    new Promise(function(resolve,reject){
+let pro = new Promise(function(resolve,reject){
     popp.style.display = 'block';
     console.log('Please Wait ...');
     if(price.value <= 2000 && price.value >= 1 && arb[0] != undefined ){
