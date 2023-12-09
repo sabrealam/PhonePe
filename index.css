@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: monospace,'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif; */
+    }
+    button ,i{
+        cursor: pointer;
+    } 
+    body{
+      background-color: rgb(222, 222, 222);
+    }
+    .true{
+      width: 25%;height: 500px;
+      margin: auto;margin-top: 25px;
+      padding: 1px; 
+      background-color: rgb(255, 255, 255);
+      border-radius: 7px;
+    }
+    #head{
+        display : flex;
+        justify-content: space-evenly;
+        align-items:center;
+
+    }
+#head > p{
+    color:white;
+    font-weight: bolder;
+}
+#head > button{
+    width: 150px; height: 30px;
+    cursor: pointer;
+}
+.arr{
+    width : 100%; height: 45px;
+    /* border:2px solid rgb(0, 255, 0); */
+    background-color: #462776;
+    display : flex;
+    justify-content:space-between;
+    border-radius: 7px;
+}
+.arr>div:first-child{
+    width: 50%;height : 100%;
+    /* border:2px solid rgb(55, 0, 255); */
+    display : flex;
+    justify-content:space-between;
+}
+.arr>div:last-child{
+    width : 40px;height : 100%;
+    /* border:2px solid red; */
+    display : grid ; place-items : center ;
+    color:white;
+}
+.aaa{
+    width: 40%;height : 100%;
+    display : flex;
+}
+.log1{
+    width: 25%;height: 100%;
+    /* border:2px solid red; */
+    display : grid ; place-items : center ;
+    color:white;
+}
+.log2{
+    color:white;
+    width:75%;height: 100%;
+    /* border:2px solid red; */
+    display : grid ; place-items : center ;
+    font-weight: bolder;
+}
+.name {
+    width: 100%;height: 70px; 
+    display : flex;
+    justify-content:space-between;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.name > div:first-child{
+    width: 20%;height : 100%;
+    /* border:2px solid red; */
+    border-radius: 50%;
+    display : grid ; place-items : center ;
+}
+.name > div:last-child{
+    width: 75%; height : 100%;
+    /* border:2px solid red; */
+    padding: 5px;
+}
+    #head{
+      width : 100%;height: 50px;
+      background-color: black;
+    }
+     
+    form {
+      margin: auto; 
+      width: 80%px;height: 74%;
+      /* border:2px solid red;  */
+      padding: 10px; 
+      margin-top: 15px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+     form > label {
+      font-size: 10px;
+     }
+     form > input {
+      margin-top: 20px; 
+      width:90%;height:40px;
+      padding: 10px;
+      font-size: 18px;
+      border:2px solid blue;
+      border-radius: 5px;
+      margin-left: 20px;
+     }
+     form > input:focus{
+        /* border-color: red; */
+     }
+     form > input:nth-child(2){
+        font-size: 13px;
+     }
+     form > div  {
+         width: 100%;       height: 35px;
+         display : grid ;   place-items : center ;
+         margin-top: 30px;  
+     }
+     #mbl {
+        font-size: 13px;
+     }
+     #sub {
+      width: 100px; height: 30px;
+      cursor: pointer;
+     }   
+     
+     #submit{
+        width : 106.5%;     height: 40px; 
+        margin-top:89px;    color:white;
+        background-color: #462776;
+        font-size: 15px;    font-weight: bolder; 
+        cursor: pointer;    border:none;
+     }
+.pop{
+      width: 25%;height: 500px; 
+      padding: 1px; 
+      background-color: rgb(255, 255, 255);
+      border-radius: 7px;
+      border:2px solid red;
+      position: absolute;
+       top: 76px;left: 523px;
+       /* display: none; */
+       padding: 25px;
+}
+
+.note {
+    width: 70%;height: 60px; 
+    margin: auto;margin-top: 15px;
+    font-weight: bolder;
+
+
+}
+iframe{
+    /* border:2px solid red; */
+    border: none;
+    width : 100%;height: auto;
+    margin-top: 50px;
+}
+iframe + p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-family: monospace;
+}
+body{
+    background-color: rgb(222, 222, 222);
+}
+.main{
+    width  : 300px;
+    height : 550px;
+    border : .5px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px; 
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(222, 222, 222);;
+}
+
+#logo{
+    width : 100%;height: 200px;
+    /* border:2px solid red; */
+    display : grid ; place-items : center ;
+    background-color: white;
+}
+
+.fa-solid{
+    scale: 7; 
+    color:red;   
+    border-radius: 50%;
+}
+.bnk{
+    width : 100%;height: 120px;
+    /* border:2px solid red; */
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.bnk > div {
+    display : flex; 
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+.bnk > div > div:first-child{
+    width : 50px;height: 50px;
+    /* border:2px solid red; */
+    border-radius: 50%;
+    display : grid ; place-items : center ;
+    background-color: #462776;
+    color:white;
+}
+.bnk > div > div:last-child{
+    width : 70%;height: 50px;
+    /* border:2px solid red; */
+    padding: 10px;
+}
+.bnk > p{ 
+    margin-left: 15px;
+    /* font-weight: bolder; */
+}
+.bnk > p:first-child{
+    
+}
+.bnk >p:last-child{
+    margin-top: 10px;
+}
+.mes{
+    background-color: white;
+    width : 100%; height:80px;
+    /* border:2px solid red; */
+    padding: 20px; 
+    margin-top: 10px;
+}
+
+.tkt{
+    width : 100%;height: 60px;
+    /* border:2px solid red;  */
+    padding: 10px;
+    display : flex;justify-content:flex-start;
+    align-items:center;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: -5px;
+    margin-top: 10px;
+}
+.btn{
+    background-color: white;
+    width : 100%;height: 45px;
+    /* border:2px solid red; */
+    margin-top:  10px; 
+}
+.btn > button {
+    width : 100%;height : 100%;
+    background-color: #462776;
+    color:white;font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ 
