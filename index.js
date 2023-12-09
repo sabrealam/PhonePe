@@ -4,7 +4,8 @@ let log = document.querySelector('#log');
 let name = document.querySelector('#name');
 let mbl = document.querySelector('#mbl');
 let price = document.querySelector('#price');
-// let popp = document.querySelector('.pop'); 
+let pop = document.querySelector('.pop'); 
+let bbb = document.querySelector('.bbb'); 
 let arb = [];
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -29,7 +30,8 @@ let arr = JSON.parse(localStorage.getItem('data')) || [];
 
 form.addEventListener('submit',function(e){ 
   e.preventDefault(); 
-  // popp.style.display = 'block';
+  pop.style.display = 'block';
+  bbb.style.display = 'none';
   new Promise(function(resolve,reject){
     console.log('Please Wait ...');
     if(price.value <= 2000 && price.value >= 1 && arb[0] != '' ){
@@ -68,7 +70,8 @@ function res(){
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function rej(){
-   // popp.style.display = 'block';
+   pop.style.display = 'block';
+   bbb.style.display = 'none';
   setTimeout(() => {
     window.open('./faild.html','_parent')
   }, 1000);

@@ -13,16 +13,16 @@
       background-color: rgb(222, 222, 222);
     }
     .true{
-      width: 25%;height: 500px;
+      width: 300px;height: 500px;
       margin: auto;margin-top: 25px;
       padding: 1px; 
       background-color: rgb(255, 255, 255);
-      border-radius: 7px;
+      border-radius: 7px; 
     }
     #head{
         display : flex;
         justify-content: space-evenly;
-        align-items:center;
+        align-items:center;  
 
     }
 #head > p{
@@ -56,6 +56,11 @@
 .aaa{
     width: 40%;height : 100%;
     display : flex;
+}
+.bbb{
+    width : 100%;
+    /* border:2px solid red; */
+    /* display: none; */
 }
 .log1{
     width: 25%;height: 100%;
@@ -95,7 +100,7 @@
      
     form {
       margin: auto; 
-      width: 80%px;height: 74%;
+      width: 100%;height: 74%;
       /* border:2px solid red;  */
       padding: 10px; 
       margin-top: 15px;
@@ -122,6 +127,7 @@
          width: 100%;       height: 35px;
          display : grid ;   place-items : center ;
          margin-top: 30px;  
+         
      }
      #mbl {
         font-size: 13px;
@@ -138,17 +144,18 @@
         font-size: 15px;    font-weight: bolder; 
         cursor: pointer;    border:none;
      }
-.pop{
-      /* width: 25%;height: 500px; 
-      padding: 1px; 
-      background-color: rgb(255, 255, 255);
-      border-radius: 7px;
-      border:2px solid red;
-      position: absolute;
+     .pop{
+    width: 100%;height: 500px; 
+    background-color: rgb(255, 255, 255);
+    padding: 1px; 
+    border-radius: 7px;
+    border:2px solid red;
+    padding: 25px;  
+    display: none;  
+    /* 
+    position: absolute;
        top: 76px;left: 523px;
-       padding: 25px; */
        /* top: 10px;left: 0px; */
-       /* display: none;   */
 }
 
 .note {
