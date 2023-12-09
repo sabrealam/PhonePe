@@ -33,12 +33,12 @@ function go(){
     
 }
  
- 
-
-
-
-
-
+  
+function ring(){ 
+    let audio = new Audio('ring.mp3');
+    audio.play();
+  }
+  
 
 
 

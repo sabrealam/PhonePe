@@ -39,12 +39,13 @@ let arr = JSON.parse(localStorage.getItem('data')) || [];
 form.addEventListener('submit',function(e){ 
   e.preventDefault(); 
   pop.style.display = 'block';
-  bbb.style.display = 'none';
+  bbb.style.display = 'none'; 
   new Promise(function(resolve,reject){
     console.log('Please Wait ...');
     if(price.value <= 2000 && price.value >= 1 &&  arb[0] != undefined && arb[1] != undefined ){
      setTimeout(() => { 
       resolve(res());
+      
      }, 1000); 
     }else{ 
       reject(rej());
@@ -55,6 +56,7 @@ form.addEventListener('submit',function(e){
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function res(){
+  
   if( arb[0] == '' || arb[1] == ''){
     alert('Please Enter Your Name And Bank Name');
     location.reload();
@@ -69,6 +71,7 @@ function res(){
     localStorage.setItem('data',JSON.stringify(arr));
     
     window.open('./success.html','_parent'); 
+    
   }
 }
 
@@ -90,6 +93,4 @@ function rej(){
     
  }
 
-
-
-
+ 
