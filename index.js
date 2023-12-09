@@ -61,8 +61,7 @@ function res(){
     
     localStorage.setItem('data',JSON.stringify(arr));
     
-    window.open('./success.html');
-    // location.reload();
+    window.open('./success.html','_parent'); 
   }
 }
 
@@ -71,7 +70,7 @@ function res(){
 function rej(){
    // popp.style.display = 'block';
   setTimeout(() => {
-    window.open('./faild.html')
+    window.open('./faild.html','_parent')
   }, 1000);
     
  }
